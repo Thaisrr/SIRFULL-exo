@@ -1,0 +1,57 @@
+form > div {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input {
+  height: 2em;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-size: 1.2em;
+}
+
+form > div.check {
+  align-items: center;
+  flex-direction: row;
+}
+
+.check input {
+  height: 1.2em;
+}
+
+form > div:last-child {
+  flex-direction: row;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ffdf93;
+  font-size: 1.2em;
+  border: solid 2px black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 black;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.error {
+  color: #ca4444;
+  font-style: italic;
+}
+
+/* ng-pristine, ng-valid */
+.ng-invalid.ng-touched {
+  border-color: #ca4444;
+}
+
+.ng-touched.ng-valid {
+  border-color: darkseagreen;
+}

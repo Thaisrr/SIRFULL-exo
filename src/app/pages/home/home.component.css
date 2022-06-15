@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+}
+
+h1 span::after {
+  content: '';
+  display: block;
+  width: 110%;
+  height: 40%;
+  background: rgba(255, 223, 147, 0.55);
+  position: absolute;
+  top:60%;
+  z-index: -1;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100% );
+
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+  gap: 35px;
+}
+
+.btn-tab {
+  display: flex;
+  gap: 0;
+  margin-bottom: 30px;
+}
+
+.btn-tab button {
+  border: solid 1px black;
+  border-left: none;
+  border-radius: 0;
+  background: white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  transition: .5s linear;
+}
+
+.btn-tab button:hover, .btn-tab button.active {
+  background: black;
+  color: white;
+}
+
+.btn-tab button:first-child {
+  border-left: solid 1px black;
+  border-radius: 5px 0 0 5px;
+}
+.btn-tab button:last-child {
+  border-radius: 0 8px 8px 0 ;
+}
+
+
+.card {
+  border-radius: 10px;
+  border: solid black 2px;
+  height: 450px;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow .5s;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 0 0 black;
+}
+
+.c-header {
+  height: 55%;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+}
+
+.c-header img {
+  height: 100%;
+}
+
+.c-body {
+  height: 30%;
+  padding: 10px;
+}
+
+.c-footer {
+  height: 15%;
+  border-top: 2px black solid;
+}

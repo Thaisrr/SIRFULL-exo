@@ -1,0 +1,26 @@
+<main>
+
+    <h1>My Awesome <span>Librairy</span></h1>
+
+    <div class="btn-tab">
+      <button (click)="changeFilter('ALL')">All</button>
+      <button (click)="changeFilter(true)">Vus</button>
+      <button (click)="changeFilter(false)">Pas Vus</button>
+      <button (click)="showForm = !showForm">Formulaire</button>
+    </div>
+
+    <div class="grid" *ngIf="!showForm">
+      <app-card
+        *ngFor="let m of movies | movieFilter : filter; let i = index"
+        [movie]="m"
+        (reload)="getMovies()"
+        (modifyEvent)="setUpdatedMovie(m)"
+      >
+      </app-card>
+    </div>
+
+
+  <app-formulaire *ngIf="showForm" (updateEvent)="getMovies()" [updated_movie]="movieToUpdate"></app-formulaire>
+
+</main>
+

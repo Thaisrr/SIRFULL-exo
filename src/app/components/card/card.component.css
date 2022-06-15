@@ -1,0 +1,53 @@
+
+.card {
+  border-radius: 10px;
+  border: solid black 2px;
+  height: 450px;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow .5s;
+
+}
+
+.card:hover {
+  box-shadow: 8px 8px 0 0 black;
+}
+
+.c-header {
+  height: 55%;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+}
+
+.c-header img {
+  width: 100%;
+}
+
+.c-body {
+  height: 45%;
+  padding: 10px;
+}
+
+
+
+.played {
+  color: darkseagreen;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ffdf93;
+  font-size: 1.2em;
+  border: solid 2px black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 black;
+}
+
+button.secondary {
+  background-color: white;
+  width: 45%;
+}
+
+button:hover {
+  box-shadow: none;
+}

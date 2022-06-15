@@ -1,0 +1,23 @@
+<form [formGroup]="filmForm" (ngSubmit)="handleSubmit()">
+  <div>
+    <label for="title">Titre</label>
+    <input formControlName="title" id="title">
+    <div class="error" *ngIf="filmForm.controls['title'].touched && filmForm.controls['title'].hasError('required')">
+      Ce champs est obligatoire
+    </div>
+  </div>
+  <div>
+    <label for="img">Image</label>
+    <input formControlName="image" id="img">
+    <div class="error"
+         *ngIf="filmForm.controls['image'].touched && filmForm.controls['image'].hasError('required')">
+      Ce champs est obligatoire
+    </div>
+  </div>
+  <div>
+    <label for="vu">Vu ?</label>
+    <input type="checkbox" formControlName="vue" id="vu">
+  </div>
+  <button type="submit">Enregistrer</button>
+
+</form>
