@@ -1,0 +1,26 @@
+.toast-container {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+}
+
+.toast {
+  width: 30%;
+  min-width: 300px;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  margin: auto;
+}
+
+.toast.success {
+  background: green;
+}
+
+.toast.error {
+  background: #ca4444;
+}
+
+.toast.info {
+  background: blueviolet;
+}

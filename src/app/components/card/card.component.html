@@ -5,6 +5,9 @@
   </div>
   <div class="c-body">
     <h3 [ngClass]="{played: movie.vue}">{{movie.title}}</h3>
+    <p>
+      <a [routerLink]="'/film/' + movie.id">Voir le détail</a>
+    </p>
     <p style="text-align: center;">
       <button (click)="changeStatus()">
         {{movie.vue? 'Pas vu' : 'Vu'}}

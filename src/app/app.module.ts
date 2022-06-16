@@ -9,6 +9,8 @@ import { MovieFilterPipe } from './utils/pipes/movie-filter.pipe';
 import { FormulaireComponent } from './components/formulaire/formulaire.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { ToastComponent } from './components/toast/toast.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     HomeComponent,
     CardComponent,
     MovieFilterPipe,
-    FormulaireComponent
+    FormulaireComponent,
+    ToastComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

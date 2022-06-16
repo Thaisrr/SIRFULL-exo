@@ -7,16 +7,16 @@
       "vue": true
     },
     {
-      "id": 2,
-      "title": "Les Deux Tours",
-      "image": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/f44b515247f306e251a9258a7da85a8172776b34a5c0f0291ea2c2f5e06a4d49._UY500_UX667_RI_V_TTW_.jpg",
-      "vue": true
+      "title": "test",
+      "image": "pas d'image",
+      "vue": false,
+      "id": 2
     },
     {
-      "id": 3,
-      "title": "Le Retour du Roi",
-      "image": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/dcc80983442dd50ebdf27ac37e339717a561c2c2cefd40b1ae0e17580f42ea9f._UY500_UX667_RI_V_TTW_.jpg",
-      "vue": false
+      "title": "Les mystèrieuses cités d'or",
+      "image": "image",
+      "vue": true,
+      "id": 3
     }
   ]
 }
